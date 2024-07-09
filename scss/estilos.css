@@ -1,0 +1,233 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #7ca7d1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header-container .logo img {
+  height: 50px;
+}
+.header-container .navbar {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.footer-container {
+  background-color: #5e81a5;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 20px;
+}
+.footer-container .footer-links {
+  display: flex;
+  gap: 20px;
+}
+.footer-container .footer-links a img {
+  width: 40px;
+  height: auto;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.products-container .product-item {
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.products-container .product-item img {
+  max-width: 100%;
+  height: auto;
+}
+.products-container .product-item p {
+  margin-top: 10px;
+}
+
+.nosotros-main-image {
+  text-align: center;
+  margin: 20px 0;
+}
+.nosotros-main-image img {
+  max-width: 50%;
+  max-height: 20%;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.image-row img {
+  width: calc(33.33% - 10px);
+  max-height: 200px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-links {
+  list-style: none;
+  padding: 10px;
+}
+.social-links li {
+  margin-bottom: 10px;
+}
+.social-links li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+.social-links li a img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #bbe7f1;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.centered-text {
+  text-align: center;
+  margin: 20px;
+}
+
+.image-text {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.image-text.left-image {
+  justify-content: flex-start;
+  text-align: left;
+}
+.image-text.right-image {
+  justify-content: flex-end;
+  text-align: right;
+}
+.image-text img {
+  width: 40%;
+  margin: 0 20px;
+}
+.image-text p {
+  width: 60%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.form-box {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-box input[type=text],
+.form-box input[type=password],
+.form-box input[type=email],
+.form-box input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-box input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+.form-box input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-box {
+    width: 80%;
+  }
+  .image-text {
+    flex-direction: column;
+  }
+  .image-text img {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .image-text p {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+.button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+.button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}/*# sourceMappingURL=estilos.css.map */

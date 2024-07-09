@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #bbe7f1; /* Fondo del body */
+    color: #333333; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Elimina cualquier margen predeterminado del body */
+}
+
+/* Contenedor del header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #7ca7d1; /* Fondo del header */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+}
+
+/* Estilo para el logo */
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+/* Contenedor de los enlaces de navegación */
+.navbar {
+    flex-grow: 1;
+    justify-content: flex-end; /* Alinea el navbar a la derecha */
+}
+
+/* Contenedor de productos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Espacio entre los elementos */
+    flex: 1;
+    max-width: 1200px; /* Ancho máximo del contenedor de productos */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.product-item {
+    width: calc(33.333% - 20px); /* Ajusta el ancho para tener 3 columnas con un margen entre ellas */
+    margin-bottom: 20px; /* Espacio entre las filas */
+    text-align: center;
+    background-color: #fff; /* Fondo del contenedor del producto */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.product-item img {
+    max-width: 100%; /* Imagen dentro del contenedor con ancho máximo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.product-item p {
+    margin-top: 10px;
+}
+
+/* Estilos para el footer */
+.footer-container {
+    background-color: #5e81a5; /* Fondo del footer */
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+    position: relative; /* Posición relativa para ajustar el margen inferior */
+    margin-top: 20px; /* Margen superior para separarlo del contenido anterior */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px; /* Margen entre las imágenes */
+}
+
+.footer-links a img {
+    width: 40px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+/* Estilo para el texto centrado */
+.centered-text {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilo para secciones de imagen y texto */
+.image-text {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.left-image {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.right-image {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.image-text img {
+    width: 40%;
+    margin: 0 20px;
+}
+
+.image-text p {
+    width: 60%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.form-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="email"],
+.form-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-box input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.form-box input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.nosotros-main-image {
+    text-align: center; /* Centra la imagen horizontalmente */
+    margin: 20px 0; /* Espaciado alrededor del banner */
+}
+
+.nosotros-main-image img {
+    max-width: 50%;
+    max-height: 20%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    /* Mantiene la proporción de la imagen */
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes uniformemente en la fila */
+    margin-top: 20px; /* Espacio entre las filas */
+    padding: 0 10px; /* Agrega un espacio entre las imágenes y el borde de la página */
+}
+
+.image-row img {
+    width: calc(33.33% - 10px); /* Ajusta el ancho de las imágenes con margen */
+    /* 33.33% de ancho para cada imagen con un margen de 5px a cada lado */
+    max-height: 200px; /* Establece una altura máxima para las imágenes */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Para alinear los elementos verticalmente arriba */
+}
+
+.social-links {
+    list-style: none;
+    padding: 10px;
+}
+
+.social-links li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-links img {
+    width: 40px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin-right: 10px; /* Ajusta el margen entre la imagen y el texto */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #45a049; /* Cambia al color agradable deseado */
+    color: white; /* Cambia el color del texto para mejorar la visibilidad */
+}
+.main-image {
+    text-align: center; /* Center the image horizontally */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.main-image img {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove extra space below the image */
+}

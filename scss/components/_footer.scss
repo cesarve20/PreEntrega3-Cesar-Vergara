@@ -1,0 +1,21 @@
+.footer-container {
+    background-color: #5e81a5;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 20px;
+  
+    .footer-links {
+      display: flex;
+      gap: 20px;
+  
+      a img {
+        width: 40px;
+        height: auto;
+      }
+    }
+  }
+  

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <img src="../img/gereemusic.png" alt="Logo" height="50">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Tuviste un problema o necesitas consultar?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at aliquet lorem. Ut interdum enim et velit ultrices, nec sodales lectus malesuada.</p>
+            <form action="enviarMensaje.php" method="post">
+                <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    
+        <section class="contact-section">
+            <h2>Donde estamos y nuestras plataformas</h2>
+            <div class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.535694245917!2d-58.522484285185676!3d-34.58094068046565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32819834d115f%3A0xb8fd99b7055fd5d1!2sBuffalo%20Music!5e0!3m2!1sen!2s!4v1621937258194!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <ul class="social-links">
+                    <li><a href="#"><img src="../img/correo.png"/>Correo electronico</a></li>
+                    <li><a href="#"><img src="../img/whatsapp.png"/>Whatsapp</a></li>
+                    <li><a href="#"><img src="../img/instagram.png"/>Instagram</a></li>
+                    <li><a href="#"><img src="../img/twitter.png"/>Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-links">
+            <a href="#link1"><img src="../img/correo.png" alt="Correo electrónico"/></a>
+            <a href="#link2"><img src="../img/whatsapp.png" alt="Whatsapp"/></a>
+            <a href="#link3"><img src="../img/instagram.png" alt="Instagram"/></a>
+            <a href="#link4"><img src="../img/gorjeo.png" alt="X (conocido antes como Twitter)"/></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

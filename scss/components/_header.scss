@@ -1,0 +1,23 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $header-bg-color;
+  width: 100%;
+  box-sizing: border-box;
+
+  .logo img {
+      height: 50px;
+  }
+
+  .navbar {
+      flex-grow: 1;
+      justify-content: flex-end;
+  }
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: $submit-hover-bg-color;
+  color: white;
+}

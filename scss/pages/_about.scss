@@ -1,0 +1,48 @@
+.nosotros-main-image {
+  text-align: center;
+  margin: 20px 0;
+
+  img {
+      max-width: 50%;
+      max-height: 20%;
+  }
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px;
+
+  img {
+      width: calc(33.33% - 10px);
+      max-height: 200px;
+  }
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-links {
+  list-style: none;
+  padding: 10px;
+
+  li {
+      margin-bottom: 10px;
+
+      a {
+          text-decoration: none;
+          color: $text-color;
+          font-weight: bold;
+
+          img {
+              width: 40px;
+              height: auto;
+              margin-right: 10px;
+          }
+      }
+  }
+}

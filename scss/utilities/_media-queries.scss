@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    line-height: 1.6;
+    background-color: $bg-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-image {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.centered-text {
+    text-align: center;
+    margin: 20px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    &.left-image {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    &.right-image {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    img {
+        width: 40%;
+        margin: 0 20px;
+    }
+
+    p {
+        width: 60%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.form-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid $product-border-color;
+    border-radius: 5px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid $product-border-color;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: $submit-bg-color;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $submit-hover-bg-color;
+        }
+    }
+}
+
+// Media Queries para estilos responsive
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 80%; // Por ejemplo, ajusta el ancho para pantallas más pequeñas
+    }
+
+    .image-text {
+        flex-direction: column;
+
+        img {
+            width: 100%; // Ajusta el tamaño de la imagen en pantallas más pequeñas
+            margin: 10px 0;
+        }
+
+        p {
+            width: 100%; // Ocupa todo el ancho disponible en pantallas pequeñas
+            margin: 10px 0;
+        }
+    }
+}
